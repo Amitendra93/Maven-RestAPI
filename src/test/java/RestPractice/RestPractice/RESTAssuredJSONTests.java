@@ -25,5 +25,6 @@ public void simple_get_test() {
 
 	response.then().body("id", hasItems(160906483));
 	response.then().body("name", hasItems("11ty.io"));
+	response.then().body("svn_url", hasItems("https://github.com/zellwk/fellowship-of-the-dom"));
 }
 }
